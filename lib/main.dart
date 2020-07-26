@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
                 backgroundImage: AssetImage('Put your image'),
               ),
               Text(
-                "Ayushi Verma",
+                "Your Name",
                 style: TextStyle(
                   fontSize: 40.0,
                   color: Colors.black,
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                'ENGINEERING STUDENT',
+                'Occupation',
                 style: TextStyle(
                   fontSize: 20.0,
                   color: Colors.black,
