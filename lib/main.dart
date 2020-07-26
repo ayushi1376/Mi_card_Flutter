@@ -10,9 +10,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.pinkAccent,
+        backgroundColor: Colors.orangeAccent,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 60.0,
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
                 "Ayushi Verma",
                 style: TextStyle(
                   fontSize: 40.0,
-                  color: Colors.black45,
+                  color: Colors.black,
                   fontFamily: 'Dancing_Script',
                   fontWeight: FontWeight.bold
                 ),
@@ -37,46 +38,65 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 1.5,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
+              SizedBox(
+                height: 20.0,
+              width: 150.0,
+              child: Divider(
+                color: Colors.black,
+              ),
+              ),
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                        Icons.phone,
-                    ),
-                    SizedBox(width: 10.0,),
-                    Text(
-                      '+91 8091198977',
-                      style: TextStyle(
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.orange,
+                  ),
+                  title: Text(
+                    '+91 8091198977',
+                    style: TextStyle(
                         color: Colors.black,
                         fontFamily: 'Source Sans Pro',
                         fontSize: 20.0
-                      ),
                     ),
-                  ],
+                  ),
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.orange,
+                  ),
+                  title: Text(
+                    'ayushiiverma80@gmail.com',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0
                     ),
-                    SizedBox(width: 10.0,),
-                    Text(
-                      'ayushiiverma80@gmail.com',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontFamily: 'Source Sans Pro',
-                          fontSize: 20.0
-                      ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.location_on,
+                    color: Colors.orange,
+                  ),
+                  title: Text(
+                    'Dehradun, Uttarakhand',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0
                     ),
-                  ],
+                  ),
                 ),
               ),
             ],
