@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 60.0,
-                backgroundImage: AssetImage('images/ayushi.jpg'),
+                backgroundImage: AssetImage('Put your image'),
               ),
               Text(
                 "Ayushi Verma",
@@ -54,7 +54,7 @@ class MyApp extends StatelessWidget {
                     color: Colors.orange,
                   ),
                   title: Text(
-                    '+91 8091198977',
+                    'Your contact number',
                     style: TextStyle(
                         color: Colors.black,
                         fontFamily: 'Source Sans Pro',
@@ -72,7 +72,7 @@ class MyApp extends StatelessWidget {
                     color: Colors.orange,
                   ),
                   title: Text(
-                    'ayushiiverma80@gmail.com',
+                    'Your email',
                     style: TextStyle(
                         color: Colors.black,
                         fontFamily: 'Source Sans Pro',
@@ -90,7 +90,7 @@ class MyApp extends StatelessWidget {
                     color: Colors.orange,
                   ),
                   title: Text(
-                    'Dehradun, Uttarakhand',
+                    'Current Location',
                     style: TextStyle(
                         color: Colors.black,
                         fontFamily: 'Source Sans Pro',
