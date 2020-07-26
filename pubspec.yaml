@@ -30,6 +30,9 @@ flutter:
   - family: Dancing_Script
     fonts:
     - asset: fonts/DancingScript-VariableFont_wght.ttf
+  - family: Source Sans Pro
+    fonts:
+    - asset: fonts/SourceSansPro-Regular.ttf
 
 
 
